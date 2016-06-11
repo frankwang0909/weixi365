@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>维希365官网首页</title>
+	<style type="text/css">
+		body, div, p, ul, li, h1, h2, h3, h4, h5, h6, dl, dt, tr, td, tbody, thead, span, em, strong, i,img, input, textarea, button,select, option{padding: 0;margin: 0;}
+		body{background-color: #f8f8f9;font-size: 14px;font-family: "微软雅黑";}
+		li{list-style:none;}
+		img{border:none;}
+		a{text-decoration:none; color:#000000;}
+		.fl{float: left;}
+		.fr{float: right;}
+		.clearfix:after{content:"";display:block;clear:both;}
+		.clearfix{zoom:1;} /*针对IE6*/
+		input,button,select,textarea{outline:none;border:none; background:none;}
+
+		#top{ 
+			height: 40px;
+			width: 100%;
+		}
+		#top div{
+			height: 40px;
+			line-height: 40px;
+		}
+		#top .top-content{
+			margin:0 auto;
+			width: 1000px;
+		}
+		.laba{
+			margin-right: 9px;
+		}
+		.shengqing{
+			color: #868686;
+			text-decoration: none;
+		}
+		.shoulu{
+			color: #d44d4e;
+		}
+		#nav{
+			width:100%;
+			height: 110px;
+			background-color: #fff;
+		}
+		.nav-content{
+			width: 1002px;
+			margin:0 auto;
+		}
+		.logo{
+			padding:25px 0;
+			margin-right: 60px;
+		}
+		.search-box{
+			padding-top:25px;
+		}
+		.search-box input, .search-box button{
+			display: inline-block;
+			height: 43px;
+			line-height: 43px;
+			border: 1px solid #dedee3;
+		}
+		.search-box input{
+			width: 497px;
+			padding: 0 10px;
+		}
+		.search-box button{
+			background-color: #203660;
+			color: #fff;
+			padding: 0 29px ;
+			margin-right: 30px;
+			font-size: 18px;
+		}
+		.main{
+			width: 1002px;
+			margin:0 auto;
+			background-color: #fff;
+			padding: 11px 25px;
+		}
+		.search-item{
+			margin-top: 23px;
+		}
+		.search-menu {
+			border-bottom: 2px solid #203761;
+		}
+		.search-menu>li{
+			position: relative;
+		}
+		.search-menu>li>a{
+			display: inline-block;
+			height: 37px;
+			line-height: 37px;
+			padding:0 24px;
+			text-align: center;
+			border:1px solid #203761;
+			border-top-right-radius: 4px;
+			border-top-left-radius: 4px;
+			background-color: #203761;
+			color: #fff;
+			font-size: 18px;
+			font-weight: normal;
+		}
+		.search-menu .submenu{ 
+			width: 117px;
+			border:1px solid #203761;
+			background-color: #fff;
+			padding: 7px 0 11px;
+			display: none;
+			position: absolute; top: 40px; left: 0;
+		}
+		.search-menu .submenu li{
+			margin: 5px 0;
+			height: 25px;
+			line-height: 25px;
+			text-align: center;
+			color: #707070;
+		}
+		.search-menu>li:hover .submenu{display: block;}
+		.search-menu .submenu li:hover{
+			background-color:#bdd0f3;
+			color: #203660;
+		}
+		.option{
+			margin-top: 20px;
+			height: 56px;
+			line-height: 56px;
+			background-color: #e7eaf1;
+		}
+		.option select{
+			width: 111px; 
+			height: 24px;
+			border:1px solid #b4cbf4;
+			padding: 0 9px;
+			background-color: #fff;
+			color: #babcc1;
+		}
+		.option select option{color: #000;}
+		.option form{margin-left: 40px;}
+		.result{
+			margin-top: 3px;
+			margin-right: 15px;
+		}
+		.result h4{
+			width: 100%;
+		}
+		.result h4 span{
+			display: inline-block;
+			height: 40px;
+			line-height: 40px;
+			font-size: 16px;
+			color: #142c58;
+			border-bottom: 1px solid #203761;
+		}
+		.result h4 .more{
+			text-align: right;
+			margin-left:20px;
+			width:818px;
+			border-bottom:1px solid #d2d4d9;
+		}
+		.result h4 .more a{
+			font-size: 14px;
+			color: #999;
+		}
+		.result-list{
+			margin-top: 20px;
+		}
+		.result-list li{
+			height: 30px;
+			float: left;
+			margin-right: 55px;
+		}
+		.result-list li .active{
+			border-bottom: 1px solid #e7a7a8;
+			color: #ce1c1d;
+		}
+		.result-list li a:hover{
+			border-bottom: 1px solid #e7a7a8;
+			color: #ce1c1d;
+		}
+		.footer{
+			background-color: #575757;
+			width: 100%;
+		}
+		.footer-content{
+			width: 1002px;
+			margin:0 auto;
+			text-align: center;
+			color:#b0b0b0;
+			padding-top: 15px;
+		}
+		.footer-content p{
+			height: 22px;
+			line-height: 22px;
+			font-size: 14px;
+		}
+		.footer-content i{
+			font-style: normal;
+			margin:0 6px;
+		}
+		.footer-content p a{
+			display: inline-block;
+			color:#b0b0b0;
+		}
+		.footer-content .link {
+			margin:0 16px;
+		}
+		.footer-content .link i{
+			display: inline-block;
+			width: 400px;
+			border-bottom: 1px solid #787676;
+			height: 11px;
+			vertical-align: top;
+		}
+		.footer-content .web{
+			height: auto;
+			padding:5px 0 23px;
+		}
+		.footer-content .web img{
+			margin-right: 15px;
+		}
+		.footer a:hover{
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div id="top" class="clearfix">
+		<div class="top-content">
+			<div class="top-left fl"><img class="laba" src="images/top-icon.png" alt=""><a href="" class="shengqing">点此申请审核录入平台，</a>
+			<span class="shoulu">维希365网免费录入</span></div>
+			<div class="top-right fr">已收录【2050】个网站</div>
+		</div>
+	</div>
+	<div id="nav">
+		<div class="nav-content clearfix">
+			<div class="logo fl"><img src="images/logo.png" alt="维希365logo"></div>
+			<div class="search-box fl">
+				<input type="text" placeholder="请输入医院名或者疾病种类"><button>搜索</button><button>进入搜索页</button>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="search-item">
+			<ul class="search-menu">
+				<li><a href="">医院查询</a>
+					<ul class="submenu">
+						<li><a href="">公立医院</a></li>
+						<li><a href="">私立医院</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="option clearfix">
+				<form class="fl">省份：
+					<select name="province" id="province">
+						<option value="选择省份">选择省份</option>
+						<option value="北京">北京</option>
+						<option value="上海">上海</option>
+						<option value="天津">天津</option>
+						<option value="重庆">重庆</option>
+						<option value="广东">广东</option>
+						<option value="广西">广西</option>
+						<option value="福建">福建</option>
+						<option value="江苏">江苏</option>
+						<option value="江西">江西</option>
+						<option value="浙江">浙江</option>
+						<option value="安徽">安徽</option>
+						<option value="河南">河南</option>
+						<option value="河北">河北</option>
+						<option value="湖南">湖南</option>
+						<option value="湖北">湖北</option>
+						<option value="山东">山东</option>
+						<option value="山西">山西</option>
+						<option value="辽宁">辽宁</option>
+						<option value="吉林">吉林</option>
+						<option value="黑龙江">黑龙江</option>
+						<option value="云南">云南</option>
+						<option value="贵州">贵州</option>
+						<option value="四川">四川</option>
+						<option value="海南">海南</option>
+						<option value="陕西">陕西</option>
+						<option value="甘肃">甘肃</option>
+						<option value="宁夏">宁夏</option>
+						<option value="青海">青海</option>
+						<option value="内蒙古">内蒙古</option>
+						<option value="新疆">新疆</option>
+						<option value="西藏">西藏</option>
+						<option value="台湾">台湾</option>
+						<option value="香港">香港</option>
+						<option value="澳门">澳门</option>
+					</select>
+				</form>
+				<form class="fl">城市：
+					<select name="city" id="city">
+						<option value="选择城市">选择城市</option>
+						<option value="北京">北京</option>
+						<option value="上海">上海</option>
+						<option value="天津">天津</option>
+						<option value="重庆">重庆</option>
+						<option value="广东">广州</option>
+					</select>
+				</form>
+				<form class="fl">等级：
+					<select name="grade" id="grade">
+						<option value="选择等级">选择等级</option>
+						<option value="三甲">三甲</option>
+						<option value="三级">三级</option>
+						<option value="二甲">二甲</option>
+						<option value="二级">二级</option>
+						<option value="一级">一级</option>
+					</select>
+				</form>
+			</div><!-- option结束 -->
+			<div class="result">
+				<h4><span>为您搜索到的结果：</span><span class=" more"><a href="">更多&gt;&gt;</a></span></h4>
+				<div class="result-list clearfix">
+					<ul>
+						<li><a href=""  class="active">北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="search-item">
+			<ul class="search-menu">
+				<li><a href="">疾病种类</a></li>
+			</ul>
+			<div class="result">
+				<h4><span>为您搜索到的结果：</span><span class=" more"><a href="">更多&gt;&gt;</a></span></h4>
+				<div class="result-list clearfix">
+					<ul>
+						<li><a href=""  class="active">感冒</a></li>
+						<li><a href="" >肺炎</a></li>
+						<li><a href="" >慢性支气管炎</a></li>
+						<li><a href="" >高血压</a></li>
+						<li><a href="" >冠心病</a></li>
+						<li><a href="" >心肌炎</a></li>
+						<li><a href="" >胃病</a></li>
+						<li><a href="" >急性胃炎</a></li>
+						<li><a href="" >慢性胃炎</a></li>
+						<li><a href="" >腹痛</a></li>
+						<li><a href="" >感冒</a></li>
+						<li><a href="" >肺炎</a></li>
+						<li><a href="" >慢性支气管炎</a></li>
+						<li><a href="" >高血压</a></li>
+						<li><a href="" >冠心病</a></li>
+						<li><a href="" >心肌炎</a></li>
+						<li><a href="" >胃病</a></li>
+						<li><a href="" >急性胃炎</a></li>
+						<li><a href="" >慢性胃炎</a></li>
+						<li><a href="" >腹痛</a></li>
+						<li><a href="" >感冒</a></li>
+						<li><a href="" >肺炎</a></li>
+						<li><a href="" >慢性支气管炎</a></li>
+						<li><a href="" >高血压</a></li>
+						<li><a href="" >冠心病</a></li>
+						<li><a href="" >心肌炎</a></li>
+						<li><a href="" >胃病</a></li>
+						<li><a href="" >急性胃炎</a></li>
+						<li><a href="" >慢性胃炎</a></li>
+						<li><a href="" >腹痛</a></li>
+						<li><a href="" >感冒</a></li>
+						<li><a href="" >肺炎</a></li>
+						<li><a href="" >慢性支气管炎</a></li>
+						<li><a href="" >高血压</a></li>
+						<li><a href="" >冠心病</a></li>
+						<li><a href="" >心肌炎</a></li>
+						<li><a href="" >胃病</a></li>
+						<li><a href="" >急性胃炎</a></li>
+						<li><a href="" >慢性胃炎</a></li>
+						<li><a href="" >腹痛</a></li>
+						<li><a href="" >感冒</a></li>
+						<li><a href="" >肺炎</a></li>
+						<li><a href="" >慢性支气管炎</a></li>
+						<li><a href="" >高血压</a></li>
+						<li><a href="" >冠心病</a></li>
+						<li><a href="" >心肌炎</a></li>
+						<li><a href="" >胃病</a></li>
+						<li><a href="" >急性胃炎</a></li>
+						<li><a href="" >慢性胃炎</a></li>
+						<li><a href="" >腹痛</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="search-item">
+			<ul class="search-menu">
+				<li><a href="">卫生部门</a>
+					<ul class="submenu">
+						<li><a href="">卫计委</a></li>
+						<li><a href="">疾控</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="option clearfix">
+				<form class="fl">省份：
+					<select name="province" id="province">
+						<option value="选择省份">选择省份</option>
+						<option value="北京">北京</option>
+						<option value="上海">上海</option>
+						<option value="天津">天津</option>
+						<option value="重庆">重庆</option>
+						<option value="广东">广东</option>
+						<option value="广西">广西</option>
+						<option value="福建">福建</option>
+						<option value="江苏">江苏</option>
+						<option value="江西">江西</option>
+						<option value="浙江">浙江</option>
+						<option value="安徽">安徽</option>
+						<option value="河南">河南</option>
+						<option value="河北">河北</option>
+						<option value="湖南">湖南</option>
+						<option value="湖北">湖北</option>
+						<option value="山东">山东</option>
+						<option value="山西">山西</option>
+						<option value="辽宁">辽宁</option>
+						<option value="吉林">吉林</option>
+						<option value="黑龙江">黑龙江</option>
+						<option value="云南">云南</option>
+						<option value="贵州">贵州</option>
+						<option value="四川">四川</option>
+						<option value="海南">海南</option>
+						<option value="陕西">陕西</option>
+						<option value="甘肃">甘肃</option>
+						<option value="宁夏">宁夏</option>
+						<option value="青海">青海</option>
+						<option value="内蒙古">内蒙古</option>
+						<option value="新疆">新疆</option>
+						<option value="西藏">西藏</option>
+						<option value="台湾">台湾</option>
+						<option value="香港">香港</option>
+						<option value="澳门">澳门</option>
+					</select>
+				</form>
+				<form class="fl">城市：
+					<select name="city" id="city">
+						<option value="选择城市">选择城市</option>
+						<option value="北京">北京</option>
+						<option value="上海">上海</option>
+						<option value="天津">天津</option>
+						<option value="重庆">重庆</option>
+						<option value="广东">广州</option>
+					</select>
+				</form>
+			</div><!-- option结束 -->
+			<div class="result">
+				<h4><span>为您搜索到的结果：</span><span class=" more"><a href="">更多&gt;&gt;</a></span></h4>
+				<div class="result-list clearfix">
+					<ul>
+						<li><a href=""  class="active">北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="search-item">
+			<ul class="search-menu">
+				<li><a href="">专业健康类媒体</a></li>
+			</ul>
+			<div class="result">
+				<h4><span>为您搜索到的结果：</span><span class=" more"><a href="">更多&gt;&gt;</a></span></h4>
+				<div class="result-list clearfix">
+					<ul>
+						<li><a href=""  class="active">北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+						<li><a href="" >北京大学第一附属医院</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-content">
+			<p class="link"><i></i><span>友情链接</span><i></i></p>
+			<p>
+				<a href="#">39健康网</a><i>|</i>
+				<a href="#">搜狐健康</a><i>|</i>
+				<a href="#">养老院大全</a><i>|</i>
+				<a href="#">健康120</a><i>|</i>
+				<a href="#">中国妇产科网</a><i>|</i>
+				<a href="#">新华网健康</a><i>|</i>
+				<a href="#">人民网健康</a><i>|</i>
+				<a href="#">新浪健康</a><i>|</i>
+				<a href="#">健康报网</a><i>|</i>
+				<a href="#">放心医苑</a><i>|</i>
+				<a href="#">肝胆相照</a>
+			</p>
+			<p>
+				<a href="#">关于我们</a><i>|</i>
+				<a href="#">联系我们</a><i>|</i>
+				<a href="#">收录申请</a><i>|</i>
+				<a href="#">广告合作</a><i>|</i>
+				<a href="#">法律声明</a>
+			</p>
+			<p>互联网医疗导航第一站 www.weixi365.com 粤ICP备xxxxxx号</p>
+			<p class="web">
+				<a href="#"><img src="images/footer-icon01.jpg" alt=""></a>
+				<a href="#"><img src="images/footer-icon02.png" alt=""></a>
+				<a href="#"><img src="images/footer-icon03.jpg" alt=""></a>
+				<a href="#"><img src="images/footer-icon04.png" alt=""></a>
+				<a href="#"><img src="images/footer-icon05.jpg" alt=""></a>
+				<a href="#"><img src="images/footer-icon06.jpg" alt=""></a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
