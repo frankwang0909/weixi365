@@ -33,9 +33,9 @@ input,button,select,textarea{outline:none;border:none; background:none;}
 .main{width: 1002px;margin:0 auto;background-color: #fff;padding: 11px 25px;}
 .search-item{margin-top: 23px;}
 .search-menu {border-bottom: 2px solid #203761;}
-.search-menu>li{position: relative;}
+.search-menu>li{position: relative; display: inline-block;}
 .search-menu>li>a{display: inline-block;height: 37px;line-height: 37px;padding:0 24px;text-align: center;border:1px solid #203761;border-top-right-radius: 4px;border-top-left-radius: 4px;background-color: #203761;color: #fff;font-size: 18px;font-weight: normal;}
-.search-menu .submenu{ width: 117px;border:1px solid #203761;background-color: #fff;padding: 7px 0 11px;display: none;position: absolute; top: 40px; left: 0;}
+.search-menu .submenu{ width:120px; border:1px solid #203761;background-color: #fff;padding: 8px 0 11px;display: none;position: absolute; top: 39px; left: 0;}
 .search-menu .submenu li{margin: 5px 0;height: 25px;line-height: 25px;text-align: center;color: #707070;}
 .search-menu>li:hover .submenu{display: block;}
 .search-menu .submenu li:hover{background-color:#bdd0f3;color: #203660;}
