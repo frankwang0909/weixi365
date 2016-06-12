@@ -50,7 +50,6 @@ input,button,select,textarea{outline:none;border:none; background:none;}
 .result h4 .more a{font-size: 14px;color: #999;}
 .result-list{margin-top: 20px;}
 .result-list li{height: 30px;float: left;margin-right: 55px;}
-.result-list li .active{border-bottom: 1px solid #e7a7a8;color: #ce1c1d;}
 .result-list li a:hover{border-bottom: 1px solid #e7a7a8;color: #ce1c1d;}
 
 /*底部区域*/
@@ -63,4 +62,3 @@ input,button,select,textarea{outline:none;border:none; background:none;}
 .footer-content .link i{display: inline-block;width: 400px;border-bottom: 1px solid #787676;height: 11px;vertical-align: top;}
 .footer-content .web{height: auto;padding:5px 0 23px;}
 .footer-content .web img{margin-right: 15px;}
-.footer a:hover{text-decoration: underline;}
