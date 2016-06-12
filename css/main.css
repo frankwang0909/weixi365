@@ -25,11 +25,9 @@ input,button,select,textarea{outline:none;border:none; background:none;}
 .nav-content{width: 1002px;margin:0 auto;}
 .logo{padding:25px 0;margin-right: 60px;}
 .search-box{padding-top:25px;}
-.search-box input{height: 43px;line-height: 43px;border: 1px solid #dedee3;}
-.search-box button{height: 45px;line-height: 45px;}
-.search-box input{width: 497px;padding: 0 10px;}
-.search-box button{background-color: #203660;color: #fff;padding: 0 29px ;margin-right: 30px;font-size: 18px;}
-
+.search-box input{height: 43px;line-height: 43px;border: 1px solid #dedee3;width: 497px;padding: 0 10px;vertical-align: middle;}
+.search-box button{height:45px;line-height:45px;background-color:#203660;color:#fff;padding:0 29px;margin-right:30px;font-size:18px;vertical-align: middle;}
+.search-box p{ height: 30px; line-height: 30px;font-size: 12px; color: #949494; }
 /*主体区域*/
 .main{width: 1002px;margin:0 auto;background-color: #fff;padding: 11px 25px;}
 .search-item{margin-top: 23px;}
